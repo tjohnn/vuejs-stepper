@@ -37,7 +37,7 @@
     props: ['options'],
     data () {
       return {
-        currentPosition: 2,
+        currentPosition: 0,
         transitionType: 'slide'
       }
     },
