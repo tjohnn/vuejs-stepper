@@ -1,14 +1,28 @@
 {
   "name": "vuejs-stepper",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Tosin Adeoye",
+    "email": "johnjokoo@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/tjohnn/vuejs-stepper/issues"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "description": "Simple stepper component for vuejs",
+  "main": "src/index.js",
+
   "dependencies": {
-    "vue": "^2.6.6"
+    "vue": "^2.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjohnn/vuejs-stepper.git"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.1",
@@ -42,5 +56,8 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
+  ],
+  "keywords": [
+    "Vue Stepper", "Stepper", "Vue", "Vuejs", "Steps"
   ]
 }
