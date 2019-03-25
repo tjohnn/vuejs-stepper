@@ -12,7 +12,7 @@ Simple stepper component for vuejs
 
 ### npm
 ``` bash
-$ npm install vuejs-datetimepicker
+$ npm install vuejs-stepper
 ```
 
 ## Usage
