@@ -34,6 +34,7 @@
     color: white;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .step-header.active .step-header-content,
 .step-header.active .step-header-line {
@@ -58,6 +59,9 @@
 .body{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    min-width:100%;
+    flex-shrink: 0;
 }
 .foot{
     display: flex;
