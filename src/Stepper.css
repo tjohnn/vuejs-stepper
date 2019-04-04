@@ -85,10 +85,10 @@ button{
 
 
 
-.slide-enter-active {
+.stepper-slide-1-enter-active {
     animation: slide-in .3s;
 }
-.slide-leave-active {
+.stepper-slide-1-leave-active {
      animation: slide-out .3s;
 }
 @keyframes slide-in {
@@ -108,10 +108,10 @@ button{
     }
 }
 
-.slide2-enter-active {
+.stepper-slide-2-enter-active {
     animation: slide2-in .3s;
 }
-.slide2-leave-active {
+.stepper-slide-2-leave-active {
     animation: slide2-out .3s;
 }
 @keyframes slide2-in {

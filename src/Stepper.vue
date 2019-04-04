@@ -19,7 +19,7 @@
 
         <div style="width:100%">
             <transition-group :name="transitionType" class="body" mode="out-in" >
-                <div v-for="(item, index) in options.headers" :key="index" v-show="currentPosition === index"
+                <div v-for="(item, index) in options.headers" :key="'step' + index" v-show="currentPosition === index"
                      :class="{'steps-item':true}">
                     <slot :name="'step-' + (index+1)"></slot>
                 </div>
@@ -45,22 +45,22 @@
     methods: {
       next () {
         if (this.currentPosition < this.options.headers.length - 1) {
-          this.transitionType = 'slide'
+          this.transitionType = 'stepper-slide-1'
           this.currentPosition++
         }
       },
       prev () {
         if (this.currentPosition > 0) {
-          this.transitionType = 'slide2'
+          this.transitionType = 'stepper-slide-2'
           this.currentPosition--
         }
       },
       slideTo (index) {
         if(this.currentPosition === index) return
         if(this.currentPosition > index){
-          this.transitionType = 'slide2'
+          this.transitionType = 'stepper-slide-2'
         } else {
-          this.transitionType = 'slide'
+          this.transitionType = 'stepper-slide-1'
         }
         this.currentPosition = index;
       }
