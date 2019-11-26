@@ -26,8 +26,8 @@
             </transition-group>
         </div>
         <div class="foot">
-            <button type="button" @click="prev()">{{options.prevText ? options.prevText : 'Prev' }}</button>
-            <button type="button" @click="next()">{{options.nextText ? options.nextText : 'Next' }}</button>
+            <button v-if="currentPosition > 0" class="prev-button" type="button" @click="prev()">{{options.prevText ? options.prevText : 'Prev' }}</button>
+            <button v-if="currentPosition < options.headers.length - 1" class="next-button" type="button" @click="next()">{{options.nextText ? options.nextText : 'Next' }}</button>
         </div>
     </div>
 </template>
